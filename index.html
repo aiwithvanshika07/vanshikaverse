@@ -1,115 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>VanshikaVerse</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title>VanshikaVerse</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #111;
-            color: white;
-        }
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #111;
+    color: white;
+}
 
-        header {
-            background: black;
-            padding: 15px;
-            text-align: center;
-        }
+/* HEADER */
+header {
+    background: black;
+    padding: 15px;
+    text-align: center;
+}
 
-        header h1 {
-            margin: 0;
-            color: #00ffff;
-        }
+header h1 {
+    margin: 0;
+    color: #00ffff;
+}
 
-        nav a {
-            color: white;
-            margin: 0 10px;
-            text-decoration: none;
-        }
+nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
 
-        nav a:hover {
-            color: #00ffff;
-        }
+nav a:hover {
+    color: #00ffff;
+}
 
-        .hero {
-            text-align: center;
-            padding: 50px 20px;
-            background: linear-gradient(45deg, #000, #222);
-        }
+/* HERO SECTION */
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(20px);}
+    to {opacity: 1; transform: translateY(0);}
+}
 
-        .hero span {
-            color: #00ffff;
-        }
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(45deg, #000, #222);
+    animation: fadeIn 1.5s ease;
+}
 
-        .btn {
-            padding: 10px 20px;
-            background: #00ffff;
-            border: none;
-            cursor: pointer;
-            margin-top: 15px;
-        }
+.hero span {
+    color: #00ffff;
+}
 
-        .section {
-            padding: 30px;
-            text-align: center;
-        }
+/* BUTTON */
+.btn {
+    padding: 10px 20px;
+    background: #00ffff;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+    border-radius: 5px;
+}
 
-        .card {
-            background: #222;
-            padding: 15px;
-            margin: 10px auto;
-            width: 80%;
-            border-radius: 10px;
-        }
+.btn:hover {
+    background: #00cccc;
+}
 
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: black;
-            font-size: 14px;
-            color: #aaa;
-        }
-    </style>
+/* SECTION */
+.section {
+    padding: 30px;
+    text-align: center;
+}
+
+/* CARDS */
+.card {
+    background: #222;
+    padding: 15px;
+    margin: 10px auto;
+    width: 80%;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    background: #333;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: black;
+    font-size: 14px;
+    color: #aaa;
+}
+</style>
 </head>
 
 <body>
 
 <header>
-    <h1>VanshikaVerse</h1>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="#projects">Projects</a>
-        <a href="contact.html">Contact</a>
-    </nav>
+<h1>VanshikaVerse</h1>
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="#projects">Projects</a>
+<a href="contact.html">Contact</a>
+</nav>
 </header>
 
 <section class="hero">
-    <h2>Enter the <span>VanshikaVerse</span></h2>
-    <p>Where Creativity Meets the Future 🚀</p>
-    <button class="btn" onclick="location.href='about.html'">Explore Now</button>
+<h2>Enter the <span>VanshikaVerse</span></h2>
+<p>Where Creativity Meets the Future 🚀</p>
+<button class="btn" onclick="location.href='about.html'">Explore Now</button>
 </section>
 
 <section id="projects" class="section">
-    <h2>My Creations</h2>
+<h2>My Creations</h2>
 
-    <div class="card">
-        <h3>Project One</h3>
-        <p>My first GitHub website</p>
-    </div>
+<div class="card">
+<h3>Project One</h3>
+<p>My first GitHub website</p>
+</div>
 
-    <div class="card">
-        <h3>Creative Design</h3>
-        <p>Modern UI design concept</p>
-    </div>
+<div class="card">
+<h3>Creative Design</h3>
+<p>Modern UI design concept</p>
+</div>
 
 </section>
 
 <footer>
-    <p>© 2026 VanshikaVerse | All Rights Reserved</p>
+<p>© 2026 VanshikaVerse | All Rights Reserved</p>
 </footer>
 
 </body>
