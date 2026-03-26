@@ -1,0 +1,170 @@
+HTML
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VanshikaVerse | Future World</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: black;
+            color: white;
+            overflow-x: hidden;
+        }
+
+        /* Animated Background */
+        body::before {
+            content: "";
+            position: fixed;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, #00f7ff, transparent, #ff00ea);
+            animation: moveBg 12s linear infinite;
+            z-index: -1;
+        }
+
+        @keyframes moveBg {
+            0% { transform: translate(0,0); }
+            50% { transform: translate(-30%, -30%); }
+            100% { transform: translate(0,0); }
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 40px;
+        }
+
+        header h1 {
+            color: #00f7ff;
+            letter-spacing: 2px;
+        }
+
+        nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #00f7ff;
+        }
+
+        .hero {
+            height: 90vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 55px;
+            text-shadow: 0 0 25px #00f7ff;
+        }
+
+        .hero span {
+            color: #ff00ea;
+        }
+
+        .hero p {
+            color: #ccc;
+            margin-top: 10px;
+        }
+
+        .btn {
+            margin-top: 25px;
+            padding: 12px 28px;
+            border: none;
+            background: #00f7ff;
+            color: black;
+            cursor: pointer;
+            font-weight: bold;
+            border-radius: 6px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #ff00ea;
+            color: white;
+            box-shadow: 0 0 15px #ff00ea;
+        }
+
+        .section {
+            padding: 70px 20px;
+            text-align: center;
+        }
+
+        .card {
+            background: rgba(255,255,255,0.08);
+            padding: 25px;
+            margin: 20px;
+            border-radius: 12px;
+            display: inline-block;
+            width: 260px;
+            transition: 0.4s;
+        }
+
+        .card:hover {
+            transform: scale(1.12);
+            box-shadow: 0 0 25px #00f7ff;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: black;
+            font-size: 14px;
+            color: #aaa;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>VanshikaVerse</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Projects</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Enter the <span>VanshikaVerse</span></h2>
+    <p>Where Creativity Meets the Future 🚀</p>
+    <button class="btn">Explore Now</button>
+</section>
+
+<section class="section">
+    <h2>My Creations</h2>
+
+    <div class="card">
+        <h3>Project One</h3>
+        <p>My first GitHub website</p>
+    </div>
+
+    <div class="card">
+        <h3>Creative Design</h3>
+        <p>Modern UI experiment</p>
+    </div>
+
+    <div class="card">
+        <h3>Future App</h3>
+        <p>Coming Soon...</p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 VanshikaVerse | Designed by Vanshika</p>
+</footer>
+
+</body>
+</html>
